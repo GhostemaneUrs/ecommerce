@@ -52,14 +52,18 @@ h3 {
   text-align: center;
 }
 
+.mw-30 {
+  max-width: 30rem;
+}
+
 .btn {
   background-color: #8cbc00;
   display: block;
   color: #fff;
-  text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 700;
   padding: 1rem;
   transition: background-color 0.3s ease-out;
+  text-align: center;
 }
 
 .btn:hover {
@@ -266,4 +270,57 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* blog */
+
+.container-blog {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.entrada {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+
+.entrada:last-of-type {
+  border: none;
+}
+
+.entrada-meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.entrada-meta p {
+  font-weight: bold;
+}
+
+.entrada-meta span {
+  color: #037bc0;
+}
+
+.container-entrada-blog {
+  width: 60rem;
+  margin: 0 auto;
+}
+
+/* Galeria */
+
+.galeria {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 40rem;
+  height: 40rem;
+  object-fit: cover;
 }
