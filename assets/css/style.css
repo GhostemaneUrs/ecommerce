@@ -52,21 +52,48 @@ h3 {
   text-align: center;
 }
 
+.mw-30 {
+  max-width: 30rem;
+}
+
+.w-30 {
+  width: 30rem;
+}
+
 .btn {
   background-color: #8cbc00;
   display: block;
   color: #fff;
-  text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 700;
   padding: 1rem;
   transition: background-color 0.3s ease-out;
+  text-align: center;
+  border: none;
 }
 
 .btn:hover {
   background-color: #769c02;
+  cursor: pointer;
 }
 
-/* Styles header y navegacíon */
+.btn-enviar {
+  background-color: #005485;
+  display: block;
+  color: #fff;
+  font-weight: 900;
+  padding: 1rem;
+  transition: background-color 0.3s ease-out;
+  text-align: center;
+  border: none;
+  text-transform: uppercase;
+}
+
+.btn-enviar:hover {
+  background-color: #013f63;
+  cursor: pointer;
+}
+
+/* Styles header y navegación */
 
 .container-navegacion-principal {
   border-top: 0.1rem solid #e1e1e1;
@@ -251,4 +278,122 @@ h3 {
   display: flex;
   justify-content: center;
   align-item: center;
+}
+
+/* Sobre nosotros */
+
+.contenido-nosotros {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.informacion-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* blog */
+
+.container-blog {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.entrada {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+
+.entrada:last-of-type {
+  border: none;
+}
+
+.entrada-meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.entrada-meta p {
+  font-weight: bold;
+}
+
+.entrada-meta span {
+  color: #037bc0;
+}
+
+.container-entrada-blog {
+  width: 60rem;
+  margin: 0 auto;
+}
+
+/* Galería */
+
+.galeria {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 40rem;
+  height: 40rem;
+  object-fit: cover;
+}
+
+/* Formulario */
+
+.container-contacto {
+  padding: 4rem 0 0 0;
+}
+
+.formulario {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1rem 0 4rem 0;
+}
+
+.formulario fieldset {
+  border: 1px solid black;
+  margin-bottom: 2rem;
+}
+
+.formulario legend {
+  background-color: #005485;
+  width: 95%;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+.enviar-formulario {
+  display: flex;
+  justify-content: center;
+}
+
+.campo {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.campo label {
+  flex-basis: 10rem;
+}
+
+.campo input:not([type="radio"]),
+.campo textarea,
+.campo select {
+  flex: 1;
+  border: 1px solid #e1e1e1;
+  padding: 1rem;
 }

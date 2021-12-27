@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce - Nosotros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="header-sitio text-center">Tienda <span class="span-sitio">Muebles</span></h1>
+    </header>
+
+    <div class="container-navegacion-principal">
+        <nav class="navegacion-principal container ">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+
+    <!-- Contacto -->
+    <div class="container container-contacto">
+        <h2 class="text-center">Contacto</h2>
+
+        <form class="formulario">
+            <!-- Sesión formulario contacto -->
+            <fieldset>
+                <legend>Formulario de contacto</legend>
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" type="text" required />
+                </div>
+
+                <div class="campo">
+                    <label for="asunto">Asunto:</label>
+                    <input id="asunto" type="text" required />
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" required />
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono:</label>
+                    <input id="telefono" type="tel" />
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" cols="10" rows="10"></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Sesión país -->
+            <fieldset>
+                <legend>País</legend>
+                <div class="campo">
+                    <label for="pais">País:</label>
+                    <select id="pais">
+                        <option disabled> -- Seleccione --</option>
+                        <option value="PR">Perú</option>
+                        <option value="CL">Chile</option>
+                        <option value="MX">México</option>
+                        <option value="ES">España</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="CO">Colombia</option>
+                        <option value="AR">Argentina</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <!-- Sesión información extra -->
+            <fieldset>
+                <legend>Información Extra</legend>
+                <div class="campo">
+                    <label for="cliente">Cliente</label>
+                    <input id="cliente" type="radio" name="tipo" value="cliente"></input>
+                </div>
+                <div class="campo">
+                    <label for="proveedor">Proveedor</label>
+                    <input id="proveedor" type="radio" name="tipo" value="proveedor"></input>
+                </div>
+
+                <div class="campo">
+                    <label for="categoria">Categoría de Interés</label>
+                    <input id="categoria" list="categorías" name="categorías"></input>
+                    <datalist id="categorias">
+                        <option disabled> -- Seleccione --</option>
+                        <option value="Cocina"></option>
+                        <option value="Exterior"></option>
+                        <option value="Recamaras"></option>
+                        <option value="Oficina"></option>
+                        <option value="Television"></option>
+                        <option value="Computadoras"></option>
+                        <option value="Muebles"></option>
+                    </datalist>
+                </div>
+            </fieldset>
+
+            <!-- Botón enviar -->
+            <div class="enviar-formulario">
+                <input class="btn-enviar w-30" type="submit" id="enviar" value="Enviar" />
+            </div>
+        </form>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container contenido-footer">
+            <div>
+                <h3>Categorías</h3>
+                <nav class="navegacion">
+                    <a href="#">Cocina</a>
+                    <a href="#">Oficina</a>
+                    <a href="#">Jardín</a>
+                    <a href="#">Cochera</a>
+                    <a href="#">Dormitorios</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Sobre Nosotros</h3>
+                <nav class="navegacion">
+                    <a href="#">Nuestra Historia</a>
+                    <a href="#">Misión, Visión y Valores</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos del Servicio</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Soporte</h3>
+                <nav class="navegacion">
+                    <a href="#">Preguntas Frecuentes</a>
+                    <a href="#">Ayuda en Línea</a>
+                    <a href="#">Confianza y Seguridad</a>
+                </nav>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Todos los derechos reservados. TiendaMuebles</p>
+        </div>
+    </footer>
+</body>
+
+</html>
